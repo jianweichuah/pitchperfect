@@ -25,7 +25,7 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HZL-5T-8Su"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-Uj-SAb">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-Uj-SAb">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -34,7 +34,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="1ip-Uj-SAb" secondAttribute="centerY" constant="-82" id="LQ0-Jl-Ael"/>
+                            <constraint firstItem="1ip-Uj-SAb" firstAttribute="top" secondItem="Uvd-cQ-Le3" secondAttribute="bottom" constant="21" id="0sM-Td-4jx"/>
                             <constraint firstAttribute="centerX" secondItem="Uvd-cQ-Le3" secondAttribute="centerX" id="eks-32-tai"/>
                             <constraint firstAttribute="centerX" secondItem="1ip-Uj-SAb" secondAttribute="centerX" constant="-0.5" id="fLs-hA-lz2"/>
                             <constraint firstAttribute="centerY" secondItem="Uvd-cQ-Le3" secondAttribute="centerY" id="wTx-zv-oAS"/>
@@ -47,7 +47,7 @@
                             <mask key="constraints">
                                 <exclude reference="eks-32-tai"/>
                                 <exclude reference="wTx-zv-oAS"/>
-                                <exclude reference="LQ0-Jl-Ael"/>
+                                <exclude reference="0sM-Td-4jx"/>
                                 <exclude reference="fLs-hA-lz2"/>
                             </mask>
                         </variation>
@@ -59,11 +59,14 @@
                             <mask key="constraints">
                                 <include reference="eks-32-tai"/>
                                 <include reference="wTx-zv-oAS"/>
-                                <include reference="LQ0-Jl-Ael"/>
+                                <include reference="0sM-Td-4jx"/>
                                 <include reference="fLs-hA-lz2"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="1ip-Uj-SAb" id="xJy-se-hQN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
