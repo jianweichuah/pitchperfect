@@ -31,36 +31,53 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjU-rb-zbI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d7Y-Ej-gZ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1ip-Uj-SAb" firstAttribute="top" secondItem="Uvd-cQ-Le3" secondAttribute="bottom" constant="21" id="0sM-Td-4jx"/>
+                            <constraint firstAttribute="centerX" secondItem="AjU-rb-zbI" secondAttribute="centerX" constant="-2" id="NAK-Hj-hzh"/>
                             <constraint firstAttribute="centerX" secondItem="Uvd-cQ-Le3" secondAttribute="centerX" id="eks-32-tai"/>
                             <constraint firstAttribute="centerX" secondItem="1ip-Uj-SAb" secondAttribute="centerX" constant="-0.5" id="fLs-hA-lz2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AjU-rb-zbI" secondAttribute="bottom" constant="20" id="lNK-B4-9f2"/>
                             <constraint firstAttribute="centerY" secondItem="Uvd-cQ-Le3" secondAttribute="centerY" id="wTx-zv-oAS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Uvd-cQ-Le3"/>
                                 <exclude reference="1ip-Uj-SAb"/>
+                                <exclude reference="AjU-rb-zbI"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="eks-32-tai"/>
-                                <exclude reference="wTx-zv-oAS"/>
                                 <exclude reference="0sM-Td-4jx"/>
                                 <exclude reference="fLs-hA-lz2"/>
+                                <exclude reference="lNK-B4-9f2"/>
+                                <exclude reference="NAK-Hj-hzh"/>
+                                <exclude reference="eks-32-tai"/>
+                                <exclude reference="wTx-zv-oAS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Uvd-cQ-Le3"/>
                                 <include reference="1ip-Uj-SAb"/>
+                                <include reference="AjU-rb-zbI"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="eks-32-tai"/>
-                                <include reference="wTx-zv-oAS"/>
                                 <include reference="0sM-Td-4jx"/>
                                 <include reference="fLs-hA-lz2"/>
+                                <include reference="lNK-B4-9f2"/>
+                                <include reference="NAK-Hj-hzh"/>
+                                <include reference="eks-32-tai"/>
+                                <include reference="wTx-zv-oAS"/>
                             </mask>
                         </variation>
                     </view>
@@ -74,5 +91,6 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="stop" width="50" height="50"/>
     </resources>
 </document>
