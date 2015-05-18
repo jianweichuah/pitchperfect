@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5120D0631B0A3CD5000ECD6D /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5120D0621B0A3CD5000ECD6D /* movie_quote.mp3 */; };
 		51AF2D8B1B08F914007F8834 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF2D8A1B08F914007F8834 /* PlaySoundsViewController.swift */; };
 		51C73DEA1B05C6F400CE2275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C73DE91B05C6F400CE2275 /* AppDelegate.swift */; };
 		51C73DEC1B05C6F400CE2275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C73DEB1B05C6F400CE2275 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5120D0621B0A3CD5000ECD6D /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		51AF2D8A1B08F914007F8834 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundsViewController.swift; path = "Pitch Perfect/PlaySoundsViewController.swift"; sourceTree = "<group>"; };
 		51C73DE41B05C6F400CE2275 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C73DE81B05C6F400CE2275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		51C73DE71B05C6F400CE2275 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5120D0621B0A3CD5000ECD6D /* movie_quote.mp3 */,
 				51C73DE81B05C6F400CE2275 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +200,7 @@
 			files = (
 				51C73DEF1B05C6F400CE2275 /* Main.storyboard in Resources */,
 				51C73DF41B05C6F400CE2275 /* LaunchScreen.xib in Resources */,
+				5120D0631B0A3CD5000ECD6D /* movie_quote.mp3 in Resources */,
 				51C73DF11B05C6F400CE2275 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
