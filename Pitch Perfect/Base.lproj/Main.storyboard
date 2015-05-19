@@ -27,28 +27,62 @@
                                     <action selector="playSlowSound:" destination="Vs9-Fw-LNQ" eventType="touchUpInside" id="pqT-7F-r0C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN7-A3-ewg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="fastSound">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFastSound:" destination="Vs9-Fw-LNQ" eventType="touchUpInside" id="Nqe-nO-F25"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-k5-k8s">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopSound:" destination="Vs9-Fw-LNQ" eventType="touchUpInside" id="Szm-Xy-fUX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="09I-PM-NI0" firstAttribute="top" secondItem="Ao8-I4-sAz" secondAttribute="bottom" constant="59" id="IdR-xX-MAK"/>
-                            <constraint firstItem="09I-PM-NI0" firstAttribute="leading" secondItem="3Tc-co-TPb" secondAttribute="leadingMargin" constant="10" id="iCd-gL-nXJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wN7-A3-ewg" secondAttribute="trailing" constant="20" id="Vs0-Hm-JMD"/>
+                            <constraint firstItem="09I-PM-NI0" firstAttribute="leading" secondItem="3Tc-co-TPb" secondAttribute="leadingMargin" constant="20" id="iCd-gL-nXJ"/>
+                            <constraint firstItem="wN7-A3-ewg" firstAttribute="top" secondItem="Ao8-I4-sAz" secondAttribute="bottom" constant="59" id="maS-Ul-cMU"/>
+                            <constraint firstAttribute="centerX" secondItem="Cgf-k5-k8s" secondAttribute="centerX" id="qZr-lP-kcM"/>
+                            <constraint firstItem="ZIO-Rn-d2s" firstAttribute="top" secondItem="Cgf-k5-k8s" secondAttribute="bottom" constant="50" id="sQs-vw-3ve"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="09I-PM-NI0"/>
+                                <exclude reference="wN7-A3-ewg"/>
+                                <exclude reference="Cgf-k5-k8s"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="sQs-vw-3ve"/>
                                 <exclude reference="IdR-xX-MAK"/>
                                 <exclude reference="iCd-gL-nXJ"/>
+                                <exclude reference="qZr-lP-kcM"/>
+                                <exclude reference="Vs0-Hm-JMD"/>
+                                <exclude reference="maS-Ul-cMU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="09I-PM-NI0"/>
+                                <include reference="wN7-A3-ewg"/>
+                                <include reference="Cgf-k5-k8s"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="sQs-vw-3ve"/>
                                 <include reference="IdR-xX-MAK"/>
                                 <include reference="iCd-gL-nXJ"/>
+                                <include reference="qZr-lP-kcM"/>
+                                <include reference="Vs0-Hm-JMD"/>
+                                <include reference="maS-Ul-cMU"/>
                             </mask>
                         </variation>
                     </view>
@@ -60,7 +94,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -91,7 +125,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d7Y-Ej-gZ6"/>
-                                    <segue destination="Vs9-Fw-LNQ" kind="show" id="Zp0-Gp-K3G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,6 +173,7 @@
                         <outlet property="recordButton" destination="Uvd-cQ-Le3" id="Rai-bo-d1V"/>
                         <outlet property="recordingInProgress" destination="1ip-Uj-SAb" id="xJy-se-hQN"/>
                         <outlet property="stopButton" destination="AjU-rb-zbI" id="8Pm-0G-fMl"/>
+                        <segue destination="Vs9-Fw-LNQ" kind="show" identifier="stopRecording" id="pwN-69-9aG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -166,6 +200,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fastSound" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slowSound" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
