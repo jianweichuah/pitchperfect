@@ -45,13 +45,35 @@
                                     <action selector="stopSound:" destination="Vs9-Fw-LNQ" eventType="touchUpInside" id="Szm-Xy-fUX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trT-Yy-gVk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunkSound">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkSound:" destination="Vs9-Fw-LNQ" eventType="touchUpInside" id="9A2-6H-2oc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzz-n3-8da">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="dathVaderSound">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDathVaderSound:" destination="Vs9-Fw-LNQ" eventType="touchUpInside" id="w0f-91-m1F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="trT-Yy-gVk" firstAttribute="leading" secondItem="3Tc-co-TPb" secondAttribute="leadingMargin" constant="20" id="DWH-vj-RgP"/>
+                            <constraint firstItem="jzz-n3-8da" firstAttribute="top" secondItem="wN7-A3-ewg" secondAttribute="bottom" constant="76" id="GRR-8H-Mee"/>
                             <constraint firstItem="09I-PM-NI0" firstAttribute="top" secondItem="Ao8-I4-sAz" secondAttribute="bottom" constant="59" id="IdR-xX-MAK"/>
+                            <constraint firstItem="trT-Yy-gVk" firstAttribute="top" secondItem="09I-PM-NI0" secondAttribute="bottom" constant="76" id="NfY-DX-ghr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wN7-A3-ewg" secondAttribute="trailing" constant="20" id="Vs0-Hm-JMD"/>
                             <constraint firstItem="09I-PM-NI0" firstAttribute="leading" secondItem="3Tc-co-TPb" secondAttribute="leadingMargin" constant="20" id="iCd-gL-nXJ"/>
                             <constraint firstItem="wN7-A3-ewg" firstAttribute="top" secondItem="Ao8-I4-sAz" secondAttribute="bottom" constant="59" id="maS-Ul-cMU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jzz-n3-8da" secondAttribute="trailing" constant="20" id="p5W-oi-R5F"/>
                             <constraint firstAttribute="centerX" secondItem="Cgf-k5-k8s" secondAttribute="centerX" id="qZr-lP-kcM"/>
                             <constraint firstItem="ZIO-Rn-d2s" firstAttribute="top" secondItem="Cgf-k5-k8s" secondAttribute="bottom" constant="50" id="sQs-vw-3ve"/>
                         </constraints>
@@ -60,12 +82,18 @@
                                 <exclude reference="09I-PM-NI0"/>
                                 <exclude reference="wN7-A3-ewg"/>
                                 <exclude reference="Cgf-k5-k8s"/>
+                                <exclude reference="trT-Yy-gVk"/>
+                                <exclude reference="jzz-n3-8da"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="sQs-vw-3ve"/>
                                 <exclude reference="IdR-xX-MAK"/>
                                 <exclude reference="iCd-gL-nXJ"/>
                                 <exclude reference="qZr-lP-kcM"/>
+                                <exclude reference="GRR-8H-Mee"/>
+                                <exclude reference="p5W-oi-R5F"/>
+                                <exclude reference="DWH-vj-RgP"/>
+                                <exclude reference="NfY-DX-ghr"/>
                                 <exclude reference="Vs0-Hm-JMD"/>
                                 <exclude reference="maS-Ul-cMU"/>
                             </mask>
@@ -75,12 +103,18 @@
                                 <include reference="09I-PM-NI0"/>
                                 <include reference="wN7-A3-ewg"/>
                                 <include reference="Cgf-k5-k8s"/>
+                                <include reference="trT-Yy-gVk"/>
+                                <include reference="jzz-n3-8da"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="sQs-vw-3ve"/>
                                 <include reference="IdR-xX-MAK"/>
                                 <include reference="iCd-gL-nXJ"/>
                                 <include reference="qZr-lP-kcM"/>
+                                <include reference="GRR-8H-Mee"/>
+                                <include reference="p5W-oi-R5F"/>
+                                <include reference="DWH-vj-RgP"/>
+                                <include reference="NfY-DX-ghr"/>
                                 <include reference="Vs0-Hm-JMD"/>
                                 <include reference="maS-Ul-cMU"/>
                             </mask>
@@ -200,6 +234,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunkSound" width="100" height="100"/>
+        <image name="dathVaderSound" width="100" height="100"/>
         <image name="fastSound" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slowSound" width="100" height="100"/>

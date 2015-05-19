@@ -16,6 +16,7 @@
 		51C73DF11B05C6F400CE2275 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C73DF01B05C6F400CE2275 /* Images.xcassets */; };
 		51C73DF41B05C6F400CE2275 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C73DF21B05C6F400CE2275 /* LaunchScreen.xib */; };
 		51C73E001B05C6F500CE2275 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C73DFF1B05C6F500CE2275 /* Pitch_PerfectTests.swift */; };
+		51DB35401B0B3166008712E3 /* youtube_test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 51DB353F1B0B3166008712E3 /* youtube_test.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		51C73DF91B05C6F500CE2275 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C73DFE1B05C6F500CE2275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C73DFF1B05C6F500CE2275 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
+		51DB353F1B0B3166008712E3 /* youtube_test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = youtube_test.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		51C73DE71B05C6F400CE2275 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51DB353F1B0B3166008712E3 /* youtube_test.mp3 */,
 				5120D0621B0A3CD5000ECD6D /* movie_quote.mp3 */,
 				51C73DE81B05C6F400CE2275 /* Info.plist */,
 			);
@@ -204,6 +207,7 @@
 				51C73DEF1B05C6F400CE2275 /* Main.storyboard in Resources */,
 				51C73DF41B05C6F400CE2275 /* LaunchScreen.xib in Resources */,
 				5120D0631B0A3CD5000ECD6D /* movie_quote.mp3 in Resources */,
+				51DB35401B0B3166008712E3 /* youtube_test.mp3 in Resources */,
 				51C73DF11B05C6F400CE2275 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
